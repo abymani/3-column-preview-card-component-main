@@ -1,0 +1,117 @@
+
+/* font imported fron google API */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+body {
+    background-color: hsl(0, 0%, 95%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:nowrap;
+    /* align-items: ; */
+    width: 60vw;
+    height: 60vh;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+}
+.car {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .sedans { 
+    background-color: hsl(31, 77%, 52%);
+}
+main .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+main .luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.heading {
+   font-family: 'Big Shoulders Display', cursive;
+   font-weight: 700;
+   color: hsl(0, 0%, 95%) ;
+   font-size: px;
+}
+
+.paragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+/* learn More button styling  */
+
+.learn-btn {
+    padding: 10px;
+    width: 80%;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 40px;
+}
+/* learn more button hover styling */
+.learn-btn:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+}
+/* button styling with respect to its container and state*/
+.sedan-btn {
+    color:hsl(31, 77%, 52%);
+}
+.sedan-btn:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+.suv-btn {
+    color:hsl(184, 100%, 22%);
+}
+.suv-btn:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-btn {
+    color:  hsl(179, 100%, 13%);
+}
+.luxury-btn:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* to increase the size of main container if screen get small to contain the content overflow */
+@media screen and (max-width:700px), screen and (max-height:600px) {
+    
+    main {
+        height: 80vh;
+        width: 80vw;
+    }
+}
+/* Responsiveness added for mobile devices if screen width get to small the flex direction will be changed  */
+@media screen and (max-width:400px), screen and (max-height:400px) {
+    body {
+        height: auto;
+    }
+    main {
+        flex-direction: column;
+        height: auto;
+      
+    }
+}
+
+
+
